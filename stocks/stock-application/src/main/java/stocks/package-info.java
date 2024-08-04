@@ -1,0 +1,4 @@
+/**
+ * Package stocks.
+ */
+package stocks;
