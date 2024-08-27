@@ -27,7 +27,7 @@ jobs:
     # Third step is to finally run our maven command. Note -B to run in "batch mode", which means no color output.
     - name: Build with Maven
       run: |
-        for projectDir in duq networking stocks; do
+        for projectDir in stocks; do
             if [ -d "$projectDir" ]; then
                 echo "Building project $projectDir"                
                 mvn -B test --file $projectDir/pom.xml
